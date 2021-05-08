@@ -34,13 +34,14 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/landrescobarl/Huddle-landing-page]
+- Live Site URL: [lhuddle-landing-pagel.netlify.app]
 
 ## My process
 
 ### Built with
 
+- Figma [https://www.figma.com/file/FzmeLsRYadgmxDCg9XeIE9/Untitled?node-id=0%3A1]
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
