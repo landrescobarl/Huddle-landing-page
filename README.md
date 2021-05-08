@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/landrescobarl/Huddle-landing-page]
-- Live Site URL: [lhuddle-landing-pagel.netlify.app]
+- Live Site URL: [https://lhuddle-landing-pagel.netlify.app]
 
 ## My process
 
