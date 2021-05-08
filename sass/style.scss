@@ -1,0 +1,514 @@
+@import "style-guide";
+
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 62.5%;
+    // outline: 0.1px solid red !important;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    width: 10rem;
+    height: 2rem;
+
+    .logo__img {
+        width: 10rem;
+        height: 2rem;
+    }
+}
+
+.button {
+    border: none;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    border-radius: 5rem;
+    @include text-regular;
+    box-shadow: 1px 5px 10px 1px #ccc;
+}
+
+.button:hover {
+    background-color: $color-Light-Pink;
+    cursor: pointer;
+}
+
+.box-text {
+    min-height: 23rem;
+    text-align: center;
+
+    .box-text__title {
+        @include text-title;
+    }
+
+    .box-text__text {
+        @include text-regular;
+        margin: 3.5rem 0rem 4rem;
+    }
+}
+
+.redes {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .redes__item {
+        width: 2rem;
+        height: 2rem;
+        margin: 0rem 2rem 0rem 0rem;
+    }
+
+    i {
+        font-size: 2rem;
+        color: white;
+    }
+
+    i:hover {
+        color: #00c7fe;
+        cursor: pointer;
+    }
+}
+
+// // BLOCK
+
+// header
+
+.header {
+    width: 100%;
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5.3%;
+    margin-bottom: 7rem;
+}
+
+.header__button {
+    display: block;
+    border: solid 1px $color-Pink;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: $color-Pink;
+}
+
+.header__button:hover {
+    background-color: initial;
+    color: $color-Light-Pink;
+    border-color: $color-Light-Pink;
+    cursor: pointer;
+}
+
+// main--headz
+
+.head {
+    min-height: 27rem;
+    text-align: center;
+    padding: 5.3% 9.3%;
+    margin-bottom: 6rem;
+}
+
+.head__box-text {
+    padding: 0% 1%;
+
+    .box-text__text {
+        padding: 0% 5%;
+    }
+}
+
+.head__button {
+    background-color: $color-Pink;
+    color: white;
+    padding: 1.2rem 3.5rem;
+}
+
+// main--statistica
+.statistic {
+    padding: 2.6% 8%;
+}
+
+// .statistic__back-img {
+//     width: 100%;
+//     min-height: 18rem;
+//     background-image: url("../images/screen-mockups.svg");
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     margin-bottom: 9rem;
+//     display: block;
+// }
+
+.statistic__back-img {
+    width: 100%;
+    min-height: 18rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.item-graphic {
+    min-height: 20rem;
+    padding: 5.3% 22.6%;
+}
+
+.item-graphic__icon {
+    width: 5rem;
+    height: 4rem;
+    padding: 5% 5%;
+
+    img {
+        width: 3rem;
+        height: 2.5rem;
+    }
+}
+
+.item-graphic__date {
+    @include text-regular;
+    font-size: 5.2rem;
+    text-align: center;
+    color: $color-Very-DarkCyan;
+}
+
+.item-graphic__leyen {
+    @include text-regular;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #909aa5;
+}
+
+.box-services--color-Very-PaleBlue {
+    background-color: $color-Very-PaleBlue;
+}
+
+.box-service__backgraun-dow-1,
+.box-service__backgraun-up-1,
+.box-service__backgraun-dow-2,
+.box-service__backgraun-up-2 {
+    width: 100%;
+    min-height: 12rem;
+}
+
+.box-service__backgraun-up-1 {
+    background-image: url("../images/bg-section-top-mobile-1.svg")
+        /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-service__backgraun-dow-1 {
+    background-image: url("../images/bg-section-bottom-mobile-1.svg")
+        /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: -2rem;
+    z-index: -1;
+}
+
+.box-service__backgraun-up-2 {
+    background-image: url("../images/bg-section-top-mobile-2.svg")
+        /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-service__backgraun-dow-2 {
+    background-image: url("../images/bg-section-bottom-mobile-2.svg")
+        /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.box-services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.box-services__box-text {
+    min-height: 20rem;
+    margin-top: 6.6%;
+
+    .box-text__text {
+        padding: 0% 8%;
+    }
+}
+
+.box-services__img-backgraund {
+    min-height: 27rem;
+    padding: 16% 12.3% 0%;
+
+    img {
+        width: 100%;
+        position: relative;
+    }
+}
+
+// foot
+
+.foot {
+    min-height: 30rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 13rem;
+}
+
+.foot__title {
+    @include text-title;
+}
+
+.foot__button {
+    background-color: $color-Pink;
+    color: white;
+    padding: 1.5rem 3.5rem;
+}
+
+.footer__linea {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: .1rem;
+}
+
+
+// footer
+
+.footer {
+    background-color: $color-Very-DarkCyan;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 13.3% 6.6%;
+
+    .box-text {
+        min-height: 15rem;
+    }
+
+    .box-text__title,
+    .box-text__text,
+    .about-me__text,
+    .about-me__contact {
+        text-align: left;
+        color: white;
+    }
+}
+
+.footer__news-letter {
+    margin-bottom: 2rem;
+    max-width: 39rem;
+}
+
+.form {
+    width: 100%;
+    min-height: 10rem;
+
+    .form__box-text {
+        width: 100%;
+        height: 4.5rem;
+        border-radius: 1rem;
+        @include text-regular;
+    }
+
+    .button {
+        background-color: $color-Pink;
+        border-radius: 0.5rem;
+        padding: 1rem 3.5rem;
+        margin: 1.5rem 0rem 3.5rem;
+        color: white;
+        float: right;
+        box-shadow: 1px 5px 10px 1px rgb(13, 38, 109);
+    }
+
+    .button:hover {
+        background-color: $color-Light-Pink;
+        cursor: pointer;
+    }
+}
+
+.footer__about-me {
+    min-height: 36rem;
+    padding: 9.3% 0%;
+    max-width: 25rem;
+
+    .footer__logo {
+        width: 18rem;
+        height: 3.5rem;
+    }
+
+    .about-me__text {
+        @include text-regular;
+        margin: 2rem 0rem 4rem;
+    }
+
+    .about-me__contact {
+        width: 18rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+    .about-me__phone,
+    .about-me__mail {
+        @include text-regular;
+        margin: 0rem 0rem 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .head {
+        
+        .box-text__text {
+            width: 50rem;
+            margin: 3rem auto;
+        }
+    }
+
+
+.statistic__back-img {
+    width: 100%;
+    min-height: 18rem;
+    text-align: center;
+}
+
+    .statistic__back-img img {
+        max-width: 75.5rem;
+    }
+
+    .statistic__graphic {
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-graphic {
+        min-height: 33rem;
+        padding: 5.3% 22.6%;
+        display: grid;
+        place-content: center;
+
+        .item-graphic__date,
+        .item-graphic__leyen {
+            text-align: left;
+        }
+    }
+
+    .box-services {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        padding: 0% 6%;
+    }
+
+    .box-services__img-backgraund {
+        min-height: 27rem;
+        padding: 0% 0%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .box-services__box-text {
+        min-height: 20rem;
+        margin-top: 0%;
+        display: grid;
+        place-content: center;
+
+        .box-text__text {
+            padding: 0% 8%;
+        }
+    }
+
+    .box-services--inverso {
+        grid-template-areas: "a b";
+
+        .box-text {
+            grid-area: b;
+        }
+
+        .box-services__img-backgraund {
+            grid-area: a;
+        }
+    }
+
+    .box-service__backgraun-up-1 {
+        background-image: url("../images/bg-section-top-desktop-1.svg")
+            /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box-service__backgraun-dow-1 {
+        background-image: url("../images/bg-section-bottom-desktop-1.svg")
+            /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        top: -2rem;
+        z-index: -1;
+    }
+
+    .box-service__backgraun-up-2 {
+        background-image: url("../images/bg-section-top-desktop-2.svg")
+            /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box-service__backgraun-dow-2 {
+        background-image: url("../images/bg-section-bottom-desktop-2.svg")
+            /*, linear-gradient($color-Very-PaleBlue, $color-Very-PaleBlue)*/;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .footer__linea {
+        width: 100%;
+        height: 15rem;
+        background-image: url("../images/bg-footer-top-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 4.1% 6.6%;
+    }
+
+    .footer__about-me {
+        padding: 0% 0%;
+        margin-right: 5rem;
+    }
+}
+
+.attribution {
+    width: 100%;
+    background-color: $color-Very-DarkCyan;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+
+    a {
+        color: white;
+        font-size: 1.2rem;
+    }
+}

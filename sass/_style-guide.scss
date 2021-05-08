@@ -1,0 +1,60 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+@mixin mobile {
+    min-width: 37.5rem;
+}
+
+@mixin desktop {
+    max-width: 144rem;
+}
+
+// ## Colors
+
+// ### Primary
+
+$color-Pink: hsl(322, 100%, 66%);
+$color-Light-Pink: hsl(321, 100%, 78%);
+$color-Light-Red: hsl(0, 100%, 63%);
+
+// ### Neutral
+
+$color-Very-DarkCyan: hsl(192, 100%, 9%);
+$color-Very-PaleBlue: hsl(207, 100%, 98%);
+
+// ## Typography
+
+// ### Headings
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 700
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+$font-family-poppin: 'Poppins', sans-serif;
+
+@mixin text-title {
+   font-family: $font-family-poppin;
+   font-size: 2.2rem;
+}
+
+// ### Body
+
+// - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans) - Weights: 400, 600, 700
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
+
+$font-family-open: 'Open Sans', sans-serif;
+$font-regular: 400;
+$font-semiBold: 600;
+$font-bold: 700;
+
+
+@mixin text-regular {
+    font-family: $font-family-open;
+    font-size: 1.2rem;
+    font-weight: $font-regular;
+}
+
+// COMPONENT
+
